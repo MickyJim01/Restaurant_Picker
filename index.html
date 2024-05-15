@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Where Are We Eating</title>
+        <script src="JS/script.js"></script>
+        <link rel="stylesheet" href="CSS/style.css" />
+    </head>
+    <body>
+        <h1>Where Are We Eating??</h1>
+        <div class="opt_group">
+            <input
+                type="radio"
+                id="breakfast"
+                name="time_of_day"
+                value="breakfast"
+                onchange="press_option()"
+            />
+            <label id="breakfast_label" class="option" for="breakfast"
+                >Breakfast</label
+            >
+            <input
+                type="radio"
+                id="lunch"
+                name="time_of_day"
+                value="lunch"
+                onchange="press_option()"
+            />
+            <label id="lunch_label" class="option" for="lunch">Lunch</label>
+            <input
+                type="radio"
+                id="dinner"
+                name="time_of_day"
+                value="dinner"
+                onchange="press_option()"
+            />
+            <label id="dinner_label" class="option" for="dinner">Dinner</label>
+        </div>
+        <button id="spinner" onclick="mealtime()">I'm Feeling Lucky</button>
+        <p id="result"></p>
+    </body>
+</html>
