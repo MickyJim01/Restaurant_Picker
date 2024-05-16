@@ -8,7 +8,7 @@
         <link rel="stylesheet" href="CSS/style.css" />
     </head>
     <body>
-        <h1>Where Are We Eating??</h1>
+        <h1>Where Are We Eating in Darwin??</h1>
         <div class="opt_group">
             <input
                 type="radio"
@@ -39,6 +39,25 @@
         </div>
         <button id="spinner" onclick="mealtime()">I'm Feeling Lucky</button>
         <p id="result"></p>
-        <p>Git fetch</p>    
+        <div>
+            <form onsubmit="return add_to_array()">
+                <!-- Text Field -->
+                <label for="add_place">Add Location</label>
+                <input type="text" name="add_place" id="add_place">
+                <br><br>
+                <!-- Radio Inputs -->
+                <label for="add_to_brekky">Breakfast</label>
+                <input type="radio" name="add_to_brekky" id="add_breakfast">
+                <br>
+                <label for="add_to_lunch">Lunch</label>
+                <input type="radio" name="add_to_lunch" id="add_lunch">
+                <br>
+                <label for="add_to_dinner">Dinner</label>
+                <input type="radio" name="add_to_dinner" id="add_dinner">
+                <br><br>
+                <!-- Submit Button -->
+                <input type="submit" name="submit" id="submit" value="Add to List">
+            </form>
+        </div>
     </body>
 </html>
