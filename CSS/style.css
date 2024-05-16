@@ -61,7 +61,7 @@ html {
     background-color: var(--light-orange);
 }
 
-input[type="radio"] {
+input[name="time_of_day"] {
     appearance: none;
 }
 
