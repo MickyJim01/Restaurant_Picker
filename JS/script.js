@@ -76,7 +76,7 @@ function default_style() {
 
 // Sets option to orange style. whatever stle is inputed
 function orange_style(label) {
-    let element_id = label + _label;
+    let element_id = label + "_label";
     console.log(element_id);
     document.getElementById('"' + element_id + '"').style.backgroundColor =
         "var(--light-orange)";
@@ -85,12 +85,12 @@ function orange_style(label) {
 function press_option() {
     if (document.getElementById("breakfast").checked) {
         default_style();
-        orange_style(breakfast);
+        orange_style("breakfast");
     } else if (document.getElementById("lunch").checked) {
         default_style();
-        orange_style(lunch);
+        orange_style("lunch");
     } else if (document.getElementById("dinner").checked) {
         default_style();
-        orange_style(dinner);
+        orange_style("dinner");
     }
 }
