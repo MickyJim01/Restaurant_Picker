@@ -76,9 +76,9 @@ function default_style() {
 
 // Sets option to orange style. whatever stle is inputed
 function orange_style(label) {
-    let element_id = '"' + label + '_label ';
+    let element_id = label + _label;
     console.log(element_id);
-    document.getElementById(element_id).style.backgroundColor =
+    document.getElementById('"' + element_id + '"').style.backgroundColor =
         "var(--light-orange)";
 }
 
