@@ -64,27 +64,33 @@ function mealtime() {
     }
 }
 
+// Sets all options to default style
+function default_style() {
+    document.getElementById("breakfast_label").style.backgroundColor =
+        "var(--light-yellow)";
+    document.getElementById("lunch_label").style.backgroundColor =
+        "var(--light-yellow)";
+    document.getElementById("dinner_label").style.backgroundColor =
+        "var(--light-yellow)";
+}
+
+// Sets option to orange style. whatever stle is inputed
+function orange_style(label) {
+    let element_id = '"' + label + '_label ';
+    console.log(element_id);
+    document.getElementById(element_id).style.backgroundColor =
+        "var(--light-orange);
+}
+
 function press_option() {
     if (document.getElementById("breakfast").checked) {
-        document.getElementById("breakfast_label").style.backgroundColor =
-            "var(--light-orange)";
-        document.getElementById("lunch_label").style.backgroundColor =
-            "var(--light-yellow)";
-        document.getElementById("dinner_label").style.backgroundColor =
-            "var(--light-yellow)";
+        default_style();
+        orange_style(breakfast);
     } else if (document.getElementById("lunch").checked) {
-        document.getElementById("lunch_label").style.backgroundColor =
-            "var(--light-orange)";
-        document.getElementById("breakfast_label").style.backgroundColor =
-            "var(--light-yellow)";
-        document.getElementById("dinner_label").style.backgroundColor =
-            "var(--light-yellow)";
+        default_style();
+        orange_style(lunch);
     } else if (document.getElementById("dinner").checked) {
-        document.getElementById("dinner_label").style.backgroundColor =
-            "var(--light-orange)";
-        document.getElementById("lunch_label").style.backgroundColor =
-            "var(--light-yellow)";
-        document.getElementById("breakfast_label").style.backgroundColor =
-            "var(--light-yellow)";
+        default_style();
+        orange_style(dinner);
     }
 }
