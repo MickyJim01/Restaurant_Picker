@@ -79,7 +79,7 @@ function orange_style(label) {
     let element_id = '"' + label + '_label ';
     console.log(element_id);
     document.getElementById(element_id).style.backgroundColor =
-        "var(--light-orange);
+        "var(--light-orange)";
 }
 
 function press_option() {
