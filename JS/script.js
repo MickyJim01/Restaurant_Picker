@@ -94,3 +94,11 @@ function press_option() {
         orange_style("dinner");
     }
 }
+
+function add_to_array() {
+    place_name = document.getElementById("add_place").value;
+    if (document.getElementById("add_breakfast").checked) {
+        breakfast_db.push(place_name);
+        console.log(place_name)
+    }
+}
